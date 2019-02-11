@@ -7,6 +7,9 @@ import (
 
 // FormatYYYYMMDD formats a date from the given layout & value to YYYY-MM-DD
 func FormatYYYYMMDD(layout, value string) string {
+	if value == "" {
+		return ""
+	}
 	dt, err := time.Parse(layout, value)
 	if err != nil {
 		log.Panic(err, layout, value)
