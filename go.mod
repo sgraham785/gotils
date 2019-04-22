@@ -1,1 +1,1 @@
-module github.com/canary-health/gotils
+module github.com/sgraham785/gotils
